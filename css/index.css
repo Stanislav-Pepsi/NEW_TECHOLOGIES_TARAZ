@@ -1,0 +1,98 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* ================= */
+/* HEADER (блок) */
+/* ================= */
+.header {
+  width: 100%;
+  padding: 20px 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.header__menu-item {
+  /* можно добавить стили для li */
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.header__contacts {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.header__city {
+  color: #ccc;
+}
+
+.header__phone {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ================= */
+/* intro (блок) */
+/* ================= */
+.intro {
+  text-align: center;
+  padding-top: 150px;
+  position: relative;
+}
+
+.intro__image {
+  margin-bottom: 20px;
+}
+
+.intro__img {
+  width: 250px;
+}
+
+.intro__title {
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.intro__subtitle {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.intro__text {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
