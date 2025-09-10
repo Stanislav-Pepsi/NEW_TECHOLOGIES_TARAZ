@@ -4,27 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Новые технологии</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="сss/colors.css">
 </head>
 <body>
   <!-- header -->
     <header class="header">
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__menu-item"><a class="header__link" href="#">Сервис</a></li>
-                <li class="header__menu-item"><a class="header__link" href="#">Производство</a></li>
-                <li class="header__menu-item"><a class="header__link" href="#">IT-решения</a></li>
-                <li class="header__menu-item"><a class="header__link" href="#">О нас</a></li>
-                <li class="header__menu-item"><a class="header__link" href="#">Контакты</a></li>
-            </ul>
-            <div class="header__contacts">
-                <span class="header__city">Алматы</span>
-                <a class="header__phone" href="tel:+77003464371">+7 (700) 346 43 71</a>
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="nav">
+                <ul>
+                    <li><button class="menu-btn" data-menu="service">Сервис</button></li>
+                    <li><button class="menu-btn" data-menu="production">Производство</button></li>
+                    <li><button class="menu-btn" data-menu="it">IT-решения</button></li>
+                    <li><button class="menu-btn" data-menu="about">О нас</button></li>
+                    <li><button class="menu-btn" data-menu="contacts">Контакты</button></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-  <!-- intro -->
+    <!-- Панель меню -->
+    <div class="menu-panel" id="menu-panel">
+        <div class="menu-panel-content" id="menu-panel-content">
+            <!-- Содержимое будет подставляться динамически -->
+        </div>
+    </div>
+
+
+    <!-- intro -->
     <section class="intro">
         <div class="intro__image">
             <img src="img/camera.png" alt="Камера видеонаблюдения" class="intro__img">
@@ -37,6 +44,6 @@
             для частных лиц и бизнеса.
         </p>
     </section>
-
+    <script src="scripts/dynamic_nav.js"></script>
 </body>
 </html>
