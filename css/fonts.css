@@ -62,3 +62,10 @@
   font-weight: 800;
   src: url('../fonts/roboto-condensed-v30-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 700; /* диапазон весов */
+  font-style: normal;
+}
