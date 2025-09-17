@@ -6,24 +6,32 @@ const menuContent = document.getElementById("menu-panel-content");
 const menuData = {
   service: `
     <div class="menu-columns">
-      <div class="column">
-        <h3>Сервис</h3>
-        <ul>
-          <li>Установка</li>
-          <li>Обслуживание</li>
-          <li>Поддержка 24/7</li>
-        </ul>
+      <div class="line__decor_panel">
+        <div class="line__decor_panel-item"></div>
+        <div class="line__decor_panel-item"></div>
+        <div class="line__decor_panel-item"></div>
+        <div class="line__decor_panel-item"></div>
+        <div class="line__decor_panel-item"></div>
       </div>
       <div class="column">
-        <h3>Гарантия</h3>
-        <ul>
-          <li>1 год бесплатно</li>
-          <li>Расширенная гарантия</li>
-        </ul>
+          <h3>Сервис</h3>
+          <ul>
+            <li>Установка</li>
+            <li>Обслуживание</li>
+            <li>Поддержка 24/7</li>
+          </ul>
       </div>
       <div class="column">
-        <img src="service.jpg" alt="Сервис">
+          <h3>Гарантия</h3>
+          <ul>
+            <li>1 год бесплатно</li>
+            <li>Расширенная гарантия</li>
+          </ul>
       </div>
+      <div class="column">
+          <img src="service.jpg" alt="Сервис">
+      </div>
+
     </div>
   `,
   production: `

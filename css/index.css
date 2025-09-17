@@ -1,5 +1,18 @@
 /* Общие стили */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --black-global: #030303;
+    --white-global: #ffffff;
+    --dark-gray-text: #4D4D4D;
+    --dark-gray-graphic: #464646;
+    --dark-gray-back: #212121;
+    --gray-global: #919191;
+    --dark-gray-back: #565656;
+    --light-gray-global: #D0D0D0;
+    --light-gray-back: #DFDFDF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -83,6 +96,8 @@ header {
   height: 100vh;
   background: rgba(0,0,0,0.5); /* полупрозрачный фон */
   transform: translateY(-100%);
+  backdrop-filter: blur(2px);          /* размытие фона */
+  -webkit-backdrop-filter: blur(10px);
   transition: transform 0.4s ease;
   z-index: 1000;
   display: flex;
@@ -98,7 +113,9 @@ header {
 .menu-panel-content {
   background: white;
   width: 100%;
-  padding: 40px 20px;
+  padding: 40px 50px;
+  color: #030303;
+  min-height: 336px;
 }
 
 .menu-columns {
@@ -107,10 +124,34 @@ header {
   gap: 40px;
 }
 
+.line__decor_panel {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: -120px;
+  max-width: 1820px;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: -0;
+  left: 50%;
+}
+
+.line__decor_panel-item {
+  width: 1px;
+  height: 456px;
+  background-color: var(--light-gray-back);
+}
+
 .menu-columns h3 {
   font-weight: bold;
   margin-bottom: 15px;
-  color: #030303;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 120%;      /* = 24px */
+  letter-spacing: -0.05em;
+  font-size: 20px;
+  font-family: 'Oswald';
+  text-transform: uppercase;
 }
 
 .menu-columns ul {
@@ -133,14 +174,14 @@ header {
 
 .line__decor {
   position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: -120px;
-    max-width: 1920px;
-    width: 1820px;
-    transform: translateX(-50%);
-    z-index: -5;
-    left: 50%;
+  display: flex;
+  justify-content: space-between;
+  top: -120px;
+  max-width: 1820px;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: -5;
+  left: 50%;
 }
 
 .line__decor-item {
